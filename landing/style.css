@@ -79,6 +79,58 @@ body,html{
 
 }
 
+/* form */
+#formContainer{
+    animation: 1s linear 0s  alternate sideR;
+    max-height: 40rem;
+    min-width: 30rem;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    backdrop-filter: blur(21px) saturate(180%);
+    -webkit-backdrop-filter: blur(21px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    color: white;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+#formContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 99%;
+    border-radius: 8px
+}
+#formContainer form h1{
+    font-size: 2rem;
+}
+#formContainer form select{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+#formContainer form button{
+    padding: 1rem;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(161, 25, 25);
+    color: white;
+    align-self: center;
+    width: 12rem;
+    cursor: pointer;
+}
+#formContainer form button:hover{
+    background-color: rgb(187, 18, 18);
+}
+option{
+    background-color:#0C1721 ;
+}
+/* anims */
 @keyframes up {
     from{
         transform: translateY(1000%);
@@ -95,6 +147,16 @@ body,html{
 @keyframes side{
     from{
         transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+@keyframes sideR{
+    from{
+        transform: translateX(100%);
         opacity: 0;
     }
     to{
