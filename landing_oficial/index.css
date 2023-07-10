@@ -1,0 +1,108 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#header img{
+    width: 90%;
+    object-fit: cover;
+
+}
+#header button{
+    height: 6rem;
+    min-height: 4rem;
+    border-radius: 10px;
+    width: 20rem;
+    border: none;
+    background-color: #404040;
+    color: #e0a92e;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 8rem;
+}
+#header button:hover{
+    background-color: #4e4d4d;
+    padding: 2rem;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 2.5rem;
+    justify-content: space-evenly;
+    min-height: 70vh;
+}
+#container span{
+    background-color: yellow;
+    width:80%;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    height: 2rem;
+    padding-top: .5rem;
+    position: relative;
+    /* left: 12rem; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+#container table{
+    width: 40%;
+    height: 6rem;
+ 
+}
+th{
+    height: 2rem;
+}
+#container thead th:nth-child(2){
+    width: 50%;
+}
+#container thead th:nth-child(3){
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* left: 7rem; */
+}
+#container table,tr,th,td{
+    border: black 1px solid;
+}
+#form{
+    display: flex;
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#container form{
+    display: flex;
+    flex-direction: column;
+justify-content: space-evenly;
+min-height: 20rem;
+border: 1px solid black;
+align-items: center;
+}
+#container form select{
+    padding: 1rem;
+    width: 80%;
+}
+#container button {
+    padding: 2rem;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: #404040;
+    color: #e0a92e;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#container button:hover{
+    background-color: #4e4d4d;
+    padding: 2rem;
+}
