@@ -87,10 +87,13 @@ justify-content: space-evenly;
 min-height: 20rem;
 border: 1px solid black;
 align-items: center;
+position: relative;
+top: 1rem;
 }
 #container form select{
     padding: 1rem;
     width: 80%;
+    margin-bottom: 3rem;
 }
 #container button {
     padding: 2rem;
@@ -105,4 +108,28 @@ align-items: center;
 #container button:hover{
     background-color: #4e4d4d;
     padding: 2rem;
+}
+.jogo{
+    position: relative;
+    bottom: 10rem;
+}
+#carrossel img{
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width:624px){
+    #container{
+        height:110vh ;
+        justify-content: space-evenly;
+    }
+    #container #form{
+      display: block;
+    }
+   #container table{
+        width: auto;
+    }
+    /* #carrossel img{
+        width: 200;
+        height: 200;
+    } */
 }
